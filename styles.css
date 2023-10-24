@@ -1,16 +1,16 @@
 body {
     background-color: #fcfaf7;
     color: #000000;
-    font-family: Arial, sans-serif;
-    background: url('awarnesslogo.jpg') center center no-repeat;
-    background-size: cover;
+    font-family: 'Courier New', Courier, monospace
 }
 
 header {
     background-color: #0000003f
     color: #000000;
-    padding: 10px 0;
-    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .top-menu {
@@ -18,13 +18,18 @@ header {
 }
 
 .top-menu ul {
+    display:flex;  
+    justify-content: space-between;
     list-style: none;
-    padding: 0;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .top-menu li {
-    display: inline;
-    margin: 0 20px;
+    display: inline;xs
 }
 
 .top-menu a {
@@ -36,22 +41,16 @@ header {
 
 footer {
     background-color: #fcfaf7;
-    color: #fff;
+    color: #000000;
     padding: 10px;
     text-align: center;
 }
 
 h1 {
-
     color:#000000;
     font-size: 42pt;
     font-weight: bold;
     text-align: center;
-}
-
-.centered-image {
-    display: block;
-    margin: 0 auto;
 }
 
 .site-title {
@@ -62,4 +61,15 @@ h1 {
 ul {
     background-color: #000000;
     padding-top: 120px;
+}
+
+main {
+    padding-top: 70pX;
+}
+
+.titlebild {
+    margin: 20px; auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
