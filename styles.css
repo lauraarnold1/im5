@@ -1,0 +1,65 @@
+body {
+    background-color: #fcfaf7;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    background: url('awarnesslogo.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #0000003f
+    color: #000000;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.top-menu {
+    text-align: center
+}
+
+.top-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.top-menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #fcfaf7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+
+    color:#000000;
+    font-size: 42pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.site-title {
+    position: relative;
+    z-index: 1;
+}
+
+ul {
+    background-color: #000000;
+    padding-top: 120px;
+}
