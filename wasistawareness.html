@@ -3,13 +3,13 @@
 
 
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
 </head>
 <body>
     <header>
         <nav class="top-menu">
             <ul>
-                <li><a href="wasistawareness.html">Was ist Awareness?</a></li>
+                <li><a href="index.html">Startseite</a></li>
                 <li><a href="awarenessanevents.html">Awareness an Events</a></li>
                 <li><a href="vorlagenawarenesskonzept.html">Vorlagen Awarenesskonzept</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -21,14 +21,25 @@
     </header>
 
     <main>
-        <h1 class="site-title">Awarnesskonzepte für schweizer Events</h1>
-        <a>Der Begriff Awareness heißt übersetzt Bewusstsein und Achtsamkeit. 
-            Für uns bedeutet Awareness einen wertschätzenden und respektvollen Umgang miteinander zu haben und diskriminierende, 
-            gewaltvolle Verhältnisse zu minimieren. Es geht darum, Verantwortung füreinander und für sich selbst zu übernehmen. 
-            Es soll eine sichere Atmosphäre entstehen, in der sich grundsätzlich alle wohlfühlen können und persönliche Grenzen gewahrt werden. 
-            Im Kontext von Veranstaltungen kann dies nur gelingen, wenn Veranstalter*innen und Besucher*innen eine Haltung und Praxis entwickeln, 
-            die Diskriminierung und (sexualisierter) Gewalt entgegenwirkt. Ziel von Awareness ist es, konsensbasiertes Handeln zu fördern und Strukturen der Ausgrenzung und Ungleichheit abzubauen.
+        <h1 class="site-title">Was ist Awareness?</h1>
+        <a class="text-content">Der Begriff Awareness heißt übersetzt Bewusstsein und Achtsamkeit. Auch diese Begriffe können von allen Personen individuell interpretiert werden. 
+            Ein Grund wieso es umso wichtiger ist einen Raum zu schaffen in dem sich ALLE wohlfühlen können. 
         </a> 
+
+        <div class="gallery" style="padding-top: 100px;">
+            <img src="images/IMG_8454.JPG" alt="Bild 1" onclick="openModal('IMG_8454.jpg', 'Bild 1 Beschreibung')">
+            <img src="images/IMG_8507.JPG" alt="Bild 2" onclick="openModal('IMG_8507.jpg', 'Bild 2 Beschreibung')">
+            <img src="images/IMG_8508.JPG" alt="Bild 2" onclick="openModal('IMG_8508.jpg', 'Bild 2 Beschreibung')">
+            <img src="images/IMG_8510.JPG" alt="Bild 2" onclick="openModal('IMG_8510.jpg', 'Bild 2 Beschreibung')">
+
+            <div id="myModal" class="modal" onclick="closeModal()">
+                <span class="close" onclick="event.stopPropagation();">&times;</span>
+                <img class="modal-content" id="modalImg" alt="Modalbild">
+                <div id="caption"></div>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
     </main>
 
     <footer>

@@ -1,20 +1,23 @@
 body {
     background-color: #fcfaf7;
     color: #000000;
-    font-family: 'Courier New', Courier, monospace
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     background-color: #0000003f
     color: #000000;
     position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 1;
+    text-align: center;
+    margin: 10px;
 }
 
 .top-menu {
     text-align: center
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .top-menu ul {
@@ -22,10 +25,8 @@ header {
     justify-content: space-between;
     list-style: none;
     padding: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
-    margin-left: 60px;
-    margin-right: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .top-menu li {
@@ -72,4 +73,12 @@ main {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+
+footer {
+    
+    padding: 50px;
+    background-color: #000000; 
+    color: #fff; 
+    text-align: center;
 }
