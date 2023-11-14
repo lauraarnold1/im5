@@ -1,44 +1,105 @@
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+}
+
+.logo img {
+    width: 350px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: none;
+    padding: 10px 20px;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.bar {
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 25%;
+    text-align: center;
+    transform: translateX(100%);
+    padding: 150px 20px 20px;
+    transition: width 0.3s ease; /* Animiere die Breite des Menüs */
+    transform: translateX(100%);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+}
+
+.menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.menu.active {
+    display: flex;
+    animation: slideIn 0.3s ease forwards;
+    width: 25%;
+}
+
+.menu.active a {
+    opacity: 1;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+    transform-origin-x: 0%;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+    transform-origin-x: 0%;
+}
+
+/*main*/
+
 body {
     background-color: #fcfaf7;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: #0000003f
-    color: #000000;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    margin: 10px;
-}
-
-.top-menu {
-    text-align: center
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-}
-
-.top-menu ul {
-    display:flex;  
-    justify-content: space-between;
-    list-style: none;
-    padding: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.top-menu li {
-    display: inline;xs
-}
-
-.top-menu a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-}
 
 footer {
     background-color: #fcfaf7;
@@ -80,5 +141,17 @@ footer {
     padding: 50px;
     background-color: #000000; 
     color: #fff; 
+    text-align: center;
+}
+
+blockquote {
+    background-color: rgb(215, 203, 203);
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+blockquote p {
+    font-size: 20pt;
     text-align: center;
 }
