@@ -1,9 +1,10 @@
-/*Header*/
+/*Header Hamburger*/
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
     background-color: none;
 }
 
@@ -44,7 +45,6 @@ header {
     right: 0;
     width: 25%;
     text-align: center;
-    transform: translateX(100%);
     padding: 150px 20px 20px;
     transition: width 0.3s ease; /* Animiere die Breite des Menüs */
     transform: translateX(100%);
@@ -84,12 +84,12 @@ header {
 
 .hamburger-menu.active .bar:nth-child(1) {
     transform: translateY(0) rotate(45deg);
-    transform-origin-x: 0%;
+    -ms-transform-origin-x: 0%;
 }
 
 .hamburger-menu.active .bar:nth-child(3) {
     transform: translateY(0) rotate(-45deg);
-    transform-origin-x: 0%;
+    -ms-transform-origin-x: 0%;
 }
 
 /*main*/
@@ -97,7 +97,7 @@ header {
 body {
     background-color: #fcfaf7;
     color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: futura;
 }
 
 
@@ -136,22 +136,87 @@ main {
     transform: translateX(-50%);
 }
 
-footer {
+blockquote {
+    background-color: white;
+    text-align: center;
+    text size:14pt;
     
-    padding: 50px;
+}
+
+/*Abschnitt 2 */
+#was-ist-awareness {
+    padding: 50px 0;
+}
+
+#was-ist-awareness h2 {
+    text-align: center;
+}
+.spalten {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%; 
+}
+
+.spalte {
+    flex: 0 1 30%; /* 30% Breite für jede Spalte */
+    height: auto;
+}
+
+.spalte p {
+    font-family: futura;
+    font-size: 14pt;
+}
+
+/* Hier deine Styles für Abschnitt 4 */
+#bisherige-konzepte {
+    padding: 50px 0; /* Füge oben und unten Platz hinzu, falls gewünscht */
+}
+
+#bisherige-konzepte h2 {
+    text-align: center; /* Zentriere den Titel */
+}
+
+.pdf-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%; /* 10% Abstand links und rechts */
+}
+
+.pdf {
+    flex: 0 1 30%; /* 30% Breite für jede PDF bzw. jedes Bild */
+    /* Hier weitere Styles für jedes PDF bzw. Bild */
+}
+
+.pdf img {
+    width: 100%; /* Bilder nehmen 100% der Breite des Containers ein */
+    height: auto; /* Behalte das Seitenverhältnis bei */
+    display: block;
+}
+.pdf:hover {
+    transform: scale(1.1); /* Ändere den Wert, um die Vergrößerung anzupassen */
+    transition: transform 0.3s; /*Anpassen wie schnell es geht*/
+}
+/*Abschnitt 5 */
+#contact h2 {
+    text-align: center;
+}
+/*footer*/
+footer {
     background-color: #000000; 
     color: #fff; 
     text-align: center;
 }
 
-blockquote {
-    background-color: rgb(215, 203, 203);
-    padding: 20px;
-    width: fit-content;
-    margin: 0 auto;
+.footer-content {
+    display: flex;
+    flex-direction: row; /* Behalte row für nebeneinander */
+    align-items: center;
+    justify-content: center; /* Zentriere den Text horizontal */
+    margin: 0 auto; /* Zentriere den Abschnitt horizontal */
 }
 
-blockquote p {
-    font-size: 20pt;
+.footer-content p {
+    margin: 20px 150px;
     text-align: center;
+    cursor: pointer;
 }

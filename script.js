@@ -1,3 +1,5 @@
+
+// Hamburger Menü
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const menu = document.querySelector('.menu');
 
@@ -10,4 +12,15 @@ hamburgerMenu.addEventListener('click', () => {
     } else {
         document.body.style.overflowY = 'auto'; // Erlaube das Scrollen, wenn das Menü nicht aktiv ist
     }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    var scrollToTopButton = document.querySelector(".scroll-to-top");
+
+    scrollToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
 });
