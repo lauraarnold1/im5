@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="de">
-
-
 <head>
-    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awarnesskonzepte an schweizer Events</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
+    <div class="wrapper">
     <header>
-        <nav class="top-menu">
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="awarenessanevents.html">Awareness an Events</a></li>
-                <li><a href="vorlagenawarenesskonzept.html">Vorlagen Awarenesskonzept</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="glossar.html">Glossar</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu">
+                <a href="kontakt.html">Kontakt</a>
+                <a href="index.html">Home</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h1 class="site-title">Was ist Awareness?</h1>
-        <a class="text-content">Der Begriff Awareness heißt übersetzt Bewusstsein und Achtsamkeit. Auch diese Begriffe können von allen Personen individuell interpretiert werden. 
-            Ein Grund wieso es umso wichtiger ist einen Raum zu schaffen in dem sich ALLE wohlfühlen können. 
-        </a> 
+        <h1> Was ist Awarness?</h1>
 
-        <div class="gallery" style="padding-top: 100px;">
-            <img src="images/IMG_8454.JPG" alt="Bild 1" onclick="openModal('IMG_8454.jpg', 'Bild 1 Beschreibung')">
-            <img src="images/IMG_8507.JPG" alt="Bild 2" onclick="openModal('IMG_8507.jpg', 'Bild 2 Beschreibung')">
-            <img src="images/IMG_8508.JPG" alt="Bild 2" onclick="openModal('IMG_8508.jpg', 'Bild 2 Beschreibung')">
-            <img src="images/IMG_8510.JPG" alt="Bild 2" onclick="openModal('IMG_8510.jpg', 'Bild 2 Beschreibung')">
+    <section>
+        <a>Awareness leitet sich vom Englischen «to be aware» ab und bezeichnet ein Konzept, das sich mit körperlichen, psychischen und persönlichen Grenzen bis hin zu Gewalt in öffentlichen Räumen auseinandersetzt. 
+           Erstmals tauchte der Begriff Awareness im Zusammenhang mit feministischen Kampagnen in den 50er-Jahren in den USA auf. Auch heute pflegen die Awareness-Initiativen einen klar feministischen Ansatz.
+        </a>
+    </section>
+    </main>  
+    <section>
+        <h2>Konsens bezw. Zustimmung</h2>
+        <p>Individuelle Grenzen werden respektiert: Nein heißt immer nein! Und noch wichtiger: Nur ja heißt ja!</p>
+        <h2>Definitionsmacht</h2>
+        <p>Wo ein Übergriff beginnt, bestimmt immer die betroffene Person und sie hat das Recht zu entscheiden, wie es nach dem Vorfall weitergeht.</p>
+        <h2>Parteilichkeit</h2>
+        <p>Die Wahrnehmung der betroffenen Person wird nicht in Frage gestellt – Solidarität steht an erster Stelle.</p>
+    </section>
 
-            <div id="myModal" class="modal" onclick="closeModal()">
-                <span class="close" onclick="event.stopPropagation();">&times;</span>
-                <img class="modal-content" id="modalImg" alt="Modalbild">
-                <div id="caption"></div>
-            </div>
-        </div>
+    <div class="video">
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/u76DFgNjNNA?si=ORwj-2gETOHWBurO" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; 
+    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+    </iframe>
+    </div>
+</div> 
+</body>
 
-        <script src="script2.js"></script>
-    </main>
-
-    <footer>
-        &copy; 2023 Awarnesskonzepte bei Events in der Schweiz | Alle Rechte vorbehalten
-    </footer>
+<footer>
+    <div class="footer-content">
+        <p>About</p>
+        <a href="kontakt.html"><p href="kontakt.html">Contact us</p></a>
+        <a href="index.html"><p>Home</p></a>
+    </div>
+    <script src="script.js"></script>
+</footer>
+</html>

@@ -1,0 +1,178 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: none;
+    position: fixed;
+}
+
+.logo img {
+    width: 350px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: none;
+    padding: 10px 20px;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.bar {
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 25%;
+    text-align: center;
+    padding: 150px 20px 20px;
+    transition: width 0.3s ease; /* Animiere die Breite des Menüs */
+    transform: translateX(100%);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+}
+
+.menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.menu.active {
+    display: flex;
+    animation: slideIn 0.3s ease forwards;
+    width: 25%;
+}
+
+.menu.active a {
+    opacity: 1;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+    -ms-transform-origin-x: 0%;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+    -ms-transform-origin-x: 0%;
+}
+
+/*main*/
+
+body {
+    background-color: #fcfaf7;
+    color: #000000;
+    font-family: futura;
+}
+
+
+footer {
+    background-color: #fcfaf7;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    color:#000000;
+    font-size: 42pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.site-title {
+    position: relative;
+    z-index: 1;
+}
+
+ul {
+    background-color: #000000;
+    padding-top: 120px;
+}
+
+main {
+    padding-top: 70pX;
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+
+
+
+/*footer*/
+footer {
+    background-color: #000000; 
+    color: #fff; 
+    text-align: center;
+    height: 50px;
+    margin-top: 40px;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row; /* Behalte row für nebeneinander */
+    align-items: center;
+    justify-content: center; /* Zentriere den Text horizontal */
+    margin: 0 auto; /* Zentriere den Abschnitt horizontal */
+}
+
+.footer-content p {
+    margin: 20px 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px; /* Negative Margin, gleich der Footer-Höhe */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}

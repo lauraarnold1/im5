@@ -6,6 +6,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: none;
+    position: fixed;
 }
 
 .logo img {
@@ -106,6 +107,7 @@ footer {
     color: #000000;
     padding: 10px;
     text-align: center;
+    margin-top: 40px;
 }
 
 h1 {
@@ -136,11 +138,50 @@ main {
     transform: translateX(-50%);
 }
 
+h2 {
+    padding-bottom: 50px;
+}
+
+/* Hier deine Styles für Abschnitt 2 (Zitat) */
+#zitat {
+    padding: 50px 0; /* Füge oben und unten Platz hinzu, falls gewünscht */
+}
+
+.zitat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px; /* Maximale Breite des Containers */
+    margin: 0 auto; /* Zentriere den Container horizontal */
+}
+
+.portrait img {
+    max-width: 100%;/* Bild passt sich der Breite des Containers an */
+    height: 300px; /* Behalte das Seitenverhältnis bei */
+}
+
+.zitat-content {
+    flex: 1; /* Nimmt den verbleibenden Platz ein */
+    margin-left: 10px; /* Abstand zwischen Portrait und Zitat */
+}
+
 blockquote {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+blockquote p {
+    font-size: 20pt;
     text-align: center;
-    text size:14pt;
-    
+}
+
+blockquote footer {
+    margin-top: 10px;
+    text-align: right;
+    background-color: white;
+    color: black;
 }
 
 /*Abschnitt 2 */
@@ -154,12 +195,16 @@ blockquote {
 .spalten {
     display: flex;
     justify-content: space-between;
-    margin: 0 10%; 
+    margin: 10px 10%;
+    text-align: justify;
+    gap: 20px;
+    
 }
 
 .spalte {
     flex: 0 1 30%; /* 30% Breite für jede Spalte */
     height: auto;
+   
 }
 
 .spalte p {
@@ -167,6 +212,17 @@ blockquote {
     font-size: 14pt;
 }
 
+h3 {
+    font-size: 14pt;
+    font-weight: 100;
+    text-align: right;
+    padding-right: 180px;
+}
+
+a h2 {
+    text-decoration: underline;
+    color: #000000;
+}
 /* Hier deine Styles für Abschnitt 4 */
 #bisherige-konzepte {
     padding: 50px 0; /* Füge oben und unten Platz hinzu, falls gewünscht */
@@ -205,6 +261,7 @@ footer {
     background-color: #000000; 
     color: #fff; 
     text-align: center;
+   
 }
 
 .footer-content {
@@ -213,10 +270,26 @@ footer {
     align-items: center;
     justify-content: center; /* Zentriere den Text horizontal */
     margin: 0 auto; /* Zentriere den Abschnitt horizontal */
+
 }
 
 .footer-content p {
     margin: 20px 150px;
     text-align: center;
     cursor: pointer;
+
+}
+
+.footer-content a {
+    text-decoration: underline;
+    color: white;
+}
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px; /* Negative Margin, gleich der Footer-Höhe */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
