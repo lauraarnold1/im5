@@ -1,5 +1,3 @@
-/*Header Hamburger*/
-
 header {
     display: flex;
     justify-content: space-between;
@@ -94,19 +92,18 @@ header {
 }
 
 /*main*/
-
 body {
     background-color: #fcfaf7;
     color: #000000;
     font-family: futura;
 }
 
+
 footer {
     background-color: #fcfaf7;
     color: #000000;
     padding: 10px;
     text-align: center;
-    margin-top: 40px;
 }
 
 h1 {
@@ -127,140 +124,72 @@ ul {
 }
 
 main {
-    padding-top: 70pX;
-}
-
-.titlebild {
-    margin: 20px; auto;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-top: 70px;
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: justify;
 }
 
 h2 {
-    padding-bottom: 50px;
+    text-align: center;
 }
 
-/* Hier deine Styles für Abschnitt 2 (Zitat) */
-#zitat {
-    padding: 50px 0; /* Füge oben und unten Platz hinzu, falls gewünscht */
-}
-
-.zitat-container {
+.fhgr {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 800px; /* Maximale Breite des Containers */
-    margin: 0 auto; /* Zentriere den Container horizontal */
+    max-width: 50px;
+    max-height: 40px;
+    margin: 0, 100px;
 }
 
-.portrait img {
-    max-width: 100%;/* Bild passt sich der Breite des Containers an */
-    height: 300px; /* Behalte das Seitenverhältnis bei */
-}
-
-.zitat-content {
-    flex: 1; /* Nimmt den verbleibenden Platz ein */
-    margin-left: 10px; /* Abstand zwischen Portrait und Zitat */
-}
-
-blockquote {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    width: fit-content;
-    margin: 0 auto;
-}
-
-blockquote p {
-    font-size: 20pt;
-    text-align: center;
-}
-
-blockquote footer {
-    margin-top: 10px;
-    text-align: right;
-    background-color: white;
-    color: black;
-}
-
-/*Abschnitt 2 */
-#was-ist-awareness {
-    padding: 50px 0;
-}
-
-#was-ist-awareness h2 {
-    text-align: center;
-}
-.spalten {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 10%;
-    text-align: justify;
-    gap: 20px;
-    
-}
-
-.spalte {
-    flex: 0 1 30%; /* 30% Breite für jede Spalte */
-    height: auto;
-   
-}
-
-.spalte p {
-    font-family: futura;
-    font-size: 14pt;
-}
-
-h3 {
-    font-size: 14pt;
-    font-weight: 100;
-    text-align: right;
-    padding-right: 180px;
-}
-
-a h2 {
-    text-decoration: underline;
-    color: #000000;
-}
-/* Hier deine Styles für Abschnitt 4 */
-#bisherige-konzepte {
-    padding: 50px 0; /* Füge oben und unten Platz hinzu, falls gewünscht */
-}
-
-#bisherige-konzepte h2 {
-    text-align: center; /* Zentriere den Titel */
-}
-
-.pdf-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10%; /* 10% Abstand links und rechts */
-}
-
-.pdf {
+.fhgrbild {
     flex: 0 1 30%; /* 30% Breite für jede PDF bzw. jedes Bild */
     /* Hier weitere Styles für jedes PDF bzw. Bild */
 }
 
-.pdf img {
-    width: 100%; /* Bilder nehmen 100% der Breite des Containers ein */
-    height: auto; /* Behalte das Seitenverhältnis bei */
-    display: block;
+/* Container für das zentrierte Bild mit Link */
+.zentriertes-bild-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-decoration: none; 
 }
-.pdf:hover {
-    transform: scale(1.1); /* Ändere den Wert, um die Vergrößerung anzupassen */
-    transition: transform 0.3s; /*Anpassen wie schnell es geht*/
+
+/* Container für das zentrierte Bild */
+.zentriertes-bild-container {
+    text-align: center; /
 }
-/*Abschnitt 5 */
-#contact h2 {
-    text-align: center;
+
+.zentriertes-bild {
+    max-width: 100%;
+    max-height: 300px;
 }
+
+.zwei-spalten {
+    display: flex;
+}
+
+/* Stil für jede Spalte */
+.spalte {
+    flex: 1; /* Jede Spalte nimmt den verfügbaren Platz gleichmäßig ein */
+    padding: 20px; /* Optional: Füge einen Innenabstand hinzu, um den Text vom Rand zu trennen */
+}
+
+/* Stil für das Bild innerhalb der Spalte */
+.spalte img {
+    width: 100%; /* Das Bild nimmt 100% der Breite der Spalte ein */
+    height: auto; /* Behalte das Seitenverhältnis des Bildes bei */
+}
+
 /*footer*/
 footer {
     background-color: #000000; 
     color: #fff; 
     text-align: center;
-   
+    height: 50px;
+    margin-top: 40px;
+    
 }
 
 .footer-content {
@@ -269,20 +198,14 @@ footer {
     align-items: center;
     justify-content: center; /* Zentriere den Text horizontal */
     margin: 0 auto; /* Zentriere den Abschnitt horizontal */
-
 }
 
 .footer-content p {
     margin: 20px 150px;
     text-align: center;
     cursor: pointer;
-
 }
 
-.footer-content a {
-    text-decoration: underline;
-    color: white;
-}
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px; /* Negative Margin, gleich der Footer-Höhe */
