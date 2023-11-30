@@ -1,4 +1,61 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awarnesskonzepte an schweizer Events</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <div class="navbar">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu">
+                <a href="wasistawareness.html">Was ist Awarness?</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Kontakt</h1>
+  <section class="main">
+        <div id="contact-form">
+            <label for="fname">Vorname:</label>
+            <input type="text" id="fname" name="fname" required>
+        
+            <label for="lname">Nachname:</label>
+            <input type="text" id="lname" name="lname" required>
+        
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" maxlength="1000" required></textarea>
+        
+            <button onclick="submitForm()">Absenden</button>
+        </div>
+        
+        <div id="success-message">
+            <p>Wir haben Ihre Nachricht erfolgreich erhalten.</p>
+        </div>
+    </section>
+  
+</main>   
+</div>
+</body>
+    <footer>
+        <div class="footer-content">
+            <a href="index.html"><p>Home</p></a>
+            <a href="kontakt.html"><p>Contact us</p></a>
+            <a class="scroll-to-top"><p>nach oben</p></a>
+        </div>
+        <script src="script2.js"></script>
+    </footer>
+    </html>

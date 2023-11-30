@@ -1,3 +1,5 @@
+/*Index page*/
+
 /*Header Hamburger*/
 
 header {
@@ -7,19 +9,15 @@ header {
     padding: 10px 20px;
     background-color: none;
     position: fixed;
+    width: 98%;
 }
-
-.logo img {
-    width: 350px;
-    height: auto;
-}
-
 .navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: none;
     padding: 10px 20px;
+    width: 98%;
 }
 
 .hamburger-menu {
@@ -138,7 +136,15 @@ main {
 }
 
 h2 {
-    padding-bottom: 50px;
+    color:#000000;
+    font-size: 32pt;
+    font-weight: semibold;
+    padding-bottom: 40px;
+}
+
+h3 a {
+    text-decoration: underline;
+    color: #000000;
 }
 
 /* Hier deine Styles für Abschnitt 2 (Zitat) */

@@ -14,6 +14,7 @@ hamburgerMenu.addEventListener('click', () => {
     }
 });
 
+//Scroll to top
 document.addEventListener("DOMContentLoaded", function () {
     var scrollToTopButton = document.querySelector(".scroll-to-top");
 
@@ -24,3 +25,33 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function zeigeErklaerungKonsens() {
+    document.getElementById('popupTitel').innerText ='Erklärung für Konsens';
+    document.getElementById('popupText').innerText = 'Konsens bedeutet die übereinstimmende Meinung von Personen zu einer bestimmten Frage ohne verdeckten oder offenen Widerspruch. Individuelle Grenzen werden respektiert: Nein heißt immer nein! Und noch wichtiger: Nur ja heißt ja!';
+    document.getElementById('popup').style.display = 'block';
+}
+
+function schliessePopupKonsens() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+function zeigeErklaerungDefinitionsmacht() {
+    document.getElementById('popupTitel').innerText ='Erklärung für Definitionsmacht';
+    document.getElementById('popupText').innerText = 'Wo ein Übergriff beginnt, bestimmt immer die betroffene Person und sie hat das Recht zu entscheiden, wie es nach dem Vorfall weitergeht.';
+    document.getElementById('popup').style.display = 'block';
+}
+
+function schliessePopupDefinitionsmacht() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+function zeigeErklaerungParteilichkeit() {
+    document.getElementById('popupTitel').innerText ='Erklärung für Parteilichkeit';
+    document.getElementById('popupText').innerText = 'Die Wahrnehmung der betroffenen Person wird nicht in Frage gestellt – Solidarität steht an erster Stelle.';
+    document.getElementById('popup').style.display = 'block';
+}
+
+function schliessePopupParteilichkeit() {
+    document.getElementById('popup').style.display = 'none';
+}

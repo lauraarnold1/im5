@@ -1,3 +1,6 @@
+
+/*about Page*/
+
 header {
     display: flex;
     justify-content: space-between;
@@ -5,19 +8,15 @@ header {
     padding: 10px 20px;
     background-color: none;
     position: fixed;
+    width: 98%;
 }
-
-.logo img {
-    width: 350px;
-    height: auto;
-}
-
 .navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: none;
     padding: 10px 20px;
+    width: 98%;
 }
 
 .hamburger-menu {
@@ -98,6 +97,10 @@ body {
     font-family: futura;
 }
 
+a {
+    font-size: 14pt;;
+    color: black;
+}
 
 footer {
     background-color: #fcfaf7;
@@ -147,25 +150,7 @@ h2 {
     /* Hier weitere Styles für jedes PDF bzw. Bild */
 }
 
-/* Container für das zentrierte Bild mit Link */
-.zentriertes-bild-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    text-decoration: none; 
-}
-
-/* Container für das zentrierte Bild */
-.zentriertes-bild-container {
-    text-align: center; /
-}
-
-.zentriertes-bild {
-    max-width: 100%;
-    max-height: 300px;
-}
-
+/*Bild mit Text*/
 .zwei-spalten {
     display: flex;
 }
@@ -176,10 +161,55 @@ h2 {
     padding: 20px; /* Optional: Füge einen Innenabstand hinzu, um den Text vom Rand zu trennen */
 }
 
-/* Stil für das Bild innerhalb der Spalte */
 .spalte img {
-    width: 100%; /* Das Bild nimmt 100% der Breite der Spalte ein */
-    height: auto; /* Behalte das Seitenverhältnis des Bildes bei */
+    width: 90%;
+    height: auto;
+}
+
+.spalte p {
+    font-family: futura;
+    font-size: 14pt;
+
+}
+
+/* Container für das zentrierte Bild mit Link */
+.zentriertes-bild-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-decoration: none; 
+}
+
+.zentriertes-bild-container {
+    text-align: center; /
+}
+
+.zentriertes-bild {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.zweispalten {
+    display: flex;
+}
+
+.zentriertes-bild-container:hover {
+    transform: scale(1.1); /* Ändere den Wert, um die Vergrößerung anzupassen */
+    transition: transform 0.3s; /*Anpassen wie schnell es geht*/
+}
+
+
+/*Kontaktformular*/
+.kontaktformular {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.versteckt {
+    display: none;
+    margin-top: 20px;
+    color: green;
 }
 
 /*footer*/

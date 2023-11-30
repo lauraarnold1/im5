@@ -1,25 +1,22 @@
+/*Kontakt*/
 header {
+    font-family: futura;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: none;
     position: fixed;
+    width: 98%;
 }
-
-.logo img {
-    width: 350px;
-    height: auto;
-}
-
 .navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: none;
     padding: 10px 20px;
+    width: 98%;
 }
-
 .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -93,13 +90,6 @@ header {
 
 /*main*/
 
-body {
-    background-color: #fcfaf7;
-    color: #000000;
-    font-family: futura;
-}
-
-
 footer {
     background-color: #fcfaf7;
     color: #000000;
@@ -125,6 +115,7 @@ ul {
 }
 
 main {
+    font-family: futura;
     padding-top: 70pX;
     padding-left: 250px;
     padding-right: 250px;
@@ -138,10 +129,43 @@ h2 {
 p {
     text-align: center;
 }
+/*Kontaktformular*/
+.main {
+    font-family: futura;
+    font-size: 14pt;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#contact-form {
+    background-color: #fcfaf7;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    padding: 150px;
+    flex-direction: column;
+    gap: 20px;
+}
 
+#success-message {
+    display: none;
+    text-align: center;
+}
 
+button {
+    font-family: futura;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-
+button:hover {
+    background-color: #227326;
+}
 
 /*footer*/
 footer {
