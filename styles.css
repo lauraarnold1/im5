@@ -99,19 +99,13 @@ body {
     font-family: futura;
 }
 
-footer {
-    background-color: #fcfaf7;
-    color: #000000;
-    padding: 10px;
-    text-align: center;
-    margin-top: 40px;
-}
-
 h1 {
     color:#000000;
     font-size: 42pt;
     font-weight: bold;
     text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease; /* 1s ist die Dauer der Transition, du kannst es nach Bedarf ändern */
 }
 
 .site-title {
@@ -128,18 +122,12 @@ main {
     padding-top: 70pX;
 }
 
-.titlebild {
-    margin: 20px; auto;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 h2 {
     color:#000000;
     font-size: 32pt;
     font-weight: semibold;
     padding-bottom: 40px;
+    margin: 0;
 }
 
 h3 a {
@@ -156,25 +144,27 @@ h3 a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px; /* Maximale Breite des Containers */
+    max-width: 900px;
+    max-height: 500px;
     margin: 0 auto; /* Zentriere den Container horizontal */
 }
 
 .portrait img {
     max-width: 100%;/* Bild passt sich der Breite des Containers an */
-    height: 300px; /* Behalte das Seitenverhältnis bei */
+    height: 400px; /* Behalte das Seitenverhältnis bei */
 }
 
 .zitat-content {
     flex: 1; /* Nimmt den verbleibenden Platz ein */
-    margin-left: 10px; /* Abstand zwischen Portrait und Zitat */
+    margin-left: 40px; /* Abstand zwischen Portrait und Zitat */
 }
 
 blockquote {
-    background-color: rgb(255, 255, 255);
+    background-color: fcfaf7;
     padding: 20px;
     width: fit-content;
     margin: 0 auto;
+    border: 4px solid black;
 }
 
 blockquote p {
@@ -185,25 +175,30 @@ blockquote p {
 blockquote footer {
     margin-top: 10px;
     text-align: right;
-    background-color: white;
+    background-color: #fcfaf7;
     color: black;
+    font-family: futura;
+    font-size: 14pt;
 }
 
 /*Abschnitt 2 */
 #was-ist-awareness {
-    padding: 50px 0;
+    padding: 40px 0;
+    background-color: #ddcdc0;
 }
 
 #was-ist-awareness h2 {
     text-align: center;
 }
 .spalten {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 10%;
-    text-align: justify;
-    gap: 20px;
-    
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        gap: 50px;
+        text-align: justify;
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 14pt;
+          
 }
 
 .spalte {
@@ -212,16 +207,15 @@ blockquote footer {
    
 }
 
-.spalte p {
-    font-family: futura;
-    font-size: 14pt;
-}
-
 h3 {
     font-size: 14pt;
     font-weight: 100;
     text-align: right;
-    padding-right: 180px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    color: #000000;
+    margin: 0;
 }
 
 a h2 {
@@ -257,15 +251,17 @@ a h2 {
     transform: scale(1.1); /* Ändere den Wert, um die Vergrößerung anzupassen */
     transition: transform 0.3s; /*Anpassen wie schnell es geht*/
 }
+
 /*Abschnitt 5 */
 #contact h2 {
     text-align: center;
 }
 /*footer*/
 footer {
-    background-color: #000000; 
-    color: #fff; 
+    background-color: #ddcdc0; 
     text-align: center;
+    margin-top: 100px;
+    padding: 30px;
    
 }
 
@@ -287,7 +283,9 @@ footer {
 
 .footer-content a {
     text-decoration: underline;
-    color: white;
+    color: black;
+    font-size: 12pt;
+    font-weight: bold;
 }
 .wrapper {
     min-height: 100%;

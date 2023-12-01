@@ -90,11 +90,10 @@ header {
 
 /*main*/
 
-footer {
+body {
     background-color: #fcfaf7;
     color: #000000;
-    padding: 10px;
-    text-align: center;
+    font-family: futura;
 }
 
 h1 {
@@ -102,6 +101,8 @@ h1 {
     font-size: 42pt;
     font-weight: bold;
     text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease; /* 1s ist die Dauer der Transition, du kannst es nach Bedarf ändern */
 }
 
 .site-title {
@@ -169,12 +170,11 @@ button:hover {
 
 /*footer*/
 footer {
-    background-color: #000000; 
-    color: #fff; 
+    background-color: #ddcdc0; 
     text-align: center;
-    height: 50px;
-    margin-top: 40px;
-    
+    margin-top: 100px;
+    padding: 30px;
+   
 }
 
 .footer-content {
@@ -183,14 +183,22 @@ footer {
     align-items: center;
     justify-content: center; /* Zentriere den Text horizontal */
     margin: 0 auto; /* Zentriere den Abschnitt horizontal */
+
 }
 
 .footer-content p {
     margin: 20px 150px;
     text-align: center;
     cursor: pointer;
+
 }
 
+.footer-content a {
+    text-decoration: underline;
+    color: black;
+    font-size: 12pt;
+    font-weight: bold;
+}
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px; /* Negative Margin, gleich der Footer-Höhe */

@@ -31,3 +31,8 @@ function submitForm() {
     document.getElementById('contact-form').style.display = 'none';
     document.getElementById('success-message').style.display = 'block';
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const h1 = document.getElementById('slow-appear');
+    h1.style.opacity = '1';
+});

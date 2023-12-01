@@ -55,3 +55,8 @@ function zeigeErklaerungParteilichkeit() {
 function schliessePopupParteilichkeit() {
     document.getElementById('popup').style.display = 'none';
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const h1 = document.getElementById('slow-appear');
+    h1.style.opacity = '1';
+});
