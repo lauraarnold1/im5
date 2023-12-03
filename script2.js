@@ -32,6 +32,9 @@ function submitForm() {
     document.getElementById('success-message').style.display = 'block';
 }
 
+
+/*titel*/
+
 document.addEventListener('DOMContentLoaded', function() {
     const h1 = document.getElementById('slow-appear');
     h1.style.opacity = '1';

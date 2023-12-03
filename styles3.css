@@ -133,39 +133,56 @@ p {
 /*Kontaktformular*/
 .main {
     font-family: futura;
-    font-size: 14pt;;
+    font-size: 14pt;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    padding: 40px;
 }
+
 #contact-form {
     background-color: #fcfaf7;
-    border: 2px solid black;
-    border-radius: 8px;
     display: flex;
-    padding: 150px;
     flex-direction: column;
+    width: 600px;
+    padding: 20px;
     gap: 20px;
+}
+
+#message {
+    height: 150px;
 }
 
 #success-message {
     display: none;
     text-align: center;
+    font-family: futura;
+    font-size: 20pt;
+    margin-top: 40px;
 }
 
-button {
+#success-message img {
+    max-width: 100%; /* Stelle sicher, dass das Bild nicht breiter als der Container ist */
+    margin-top: 20px; /* Füge einen Abstand oberhalb des Bildes hinzu */
+}
+
+#submit-button {
     font-family: futura;
     background-color: #000000;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #227326;
+#submit-button:hover {
+    background-color: #ddcdc0;
+}
+
+#submit-button-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*footer*/

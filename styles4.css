@@ -152,16 +152,16 @@ h2 {
 }
 
 /*Bild mit Text*/
-.zwei-spalten {
+.zweispalten {
     display: flex;
-    max-width: 800px;
+    gap: 40px;
+
 }
 
 /* Stil für jede Spalte */
 .spalte {
     flex: 1; /* Jede Spalte nimmt den verfügbaren Platz gleichmäßig ein */
-    padding-left: 20px; 
-    padding-right: 20px; /* Optional: Füge einen Innenabstand hinzu, um den Text vom Rand zu trennen */
+    
 }
 
 .spalte img {
@@ -193,26 +193,9 @@ h2 {
     max-height: 300px;
 }
 
-.zweispalten {
-    display: flex;
-}
-
 .zentriertes-bild-container:hover {
     transform: scale(1.1); /* Ändere den Wert, um die Vergrößerung anzupassen */
     transition: transform 0.3s; /*Anpassen wie schnell es geht*/
-}
-
-
-/*Kontaktformular*/
-.kontaktformular {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.versteckt {
-    display: none;
-    margin-top: 20px;
-    color: green;
 }
 
 /*footer*/
