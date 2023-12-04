@@ -76,6 +76,10 @@ header {
     }
 }
 
+.hamburger-menu.active .bar {
+    background-color: whitesmoke;
+}
+
 .hamburger-menu.active .bar:nth-child(2) {
     opacity: 0;
 }
@@ -131,9 +135,8 @@ main {
 h2 {
     color:#000000;
     font-size: 32pt;
-    font-weight: semibold;
+    font-weight: bold;
     padding-bottom: 40px;
-    padding-top: 40px;
     text-align: center;
     margin: 0;
 }
@@ -237,4 +240,62 @@ footer {
 html, body {
     height: 100%;
     margin: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header, .navbar {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    main {
+        padding: 20px; /* Verringere den Abstand im Hauptinhalt */
+        text-align: center; /* Zentriere den Text im Hauptinhalt */
+    }
+
+    h1 {
+        font-size: 32pt; /* Verringere die Schriftgröße des H1-Titels */
+    }
+
+    h2 {
+        font-size: 24pt; /* Verringere die Schriftgröße des H2-Titels */
+    }
+
+    .spalte {
+        flex-direction: column; /* Ändere die Ausrichtung der Spalten auf vertikal */
+        text-align: center; /* Zentriere den Text in den Spalten */
+    }
+
+    .zweispalten {
+        flex-direction: column;
+    }
+
+    .zentriertes-bild-link {
+        height: auto; /* Ändere die Höhe des zentrierten Bild-Links */
+    }
+
+    .zentriertes-bild-container {
+        max-width: 100%;
+        padding: 40px; /* Volle Breite für das zentrierte Bild */
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Ändere von Reihe (row) zu Spalte (column) */
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .footer-content p {
+        margin: 10px 0; /* Anpassung des Abstands zwischen den Wörtern */
+    }
 }

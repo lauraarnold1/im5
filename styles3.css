@@ -74,6 +74,10 @@ header {
     }
 }
 
+.hamburger-menu.active .bar {
+    background-color: whitesmoke;
+}
+
 .hamburger-menu.active .bar:nth-child(2) {
     opacity: 0;
 }
@@ -224,4 +228,47 @@ footer {
 html, body {
     height: 100%;
     margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    header, .navbar {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    main {
+        padding: 20px; /* Verringere den Abstand im Hauptinhalt */
+        text-align: center; /* Zentriere den Text im Hauptinhalt */
+    }
+
+    h1 {
+        font-size: 32pt; /* Verringere die Schriftgröße des H1-Titels */
+    }
+
+    #contact-form {
+        width: 100%; /* Volle Breite für das Kontaktformular */
+    }
+
+    #submit-button-container {
+        justify-content: center; /* Zentriere den Absenden-Button */
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Ändere von Reihe (row) zu Spalte (column) */
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .footer-content p {
+        margin: 10px 0; /* Anpassung des Abstands zwischen den Wörtern */
+    }
 }

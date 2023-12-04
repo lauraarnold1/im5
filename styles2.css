@@ -74,6 +74,10 @@ header {
     }
 }
 
+.hamburger-menu.active .bar {
+    background-color: whitesmoke;
+}
+
 .hamburger-menu.active .bar:nth-child(2) {
     opacity: 0;
 }
@@ -237,3 +241,45 @@ html, body {
     margin: 0;
 }
 
+/*Media Querie für Handy*/
+@media only screen and (max-width: 600px) {
+    header,
+    .navbar {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32pt;
+    }
+
+    main {
+        padding: 20px; /* Verringere den Abstand im Hauptinhalt */
+        text-align: center; /* Zentriere den Text im Hauptinhalt */
+    }
+
+
+    .video {
+        padding-top: 20px;
+        padding-bottom: 20px; /* Verringere den Abstand im Videobereich */
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Ändere von Reihe (row) zu Spalte (column) */
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .footer-content p {
+        margin: 10px 0; /* Anpassung des Abstands zwischen den Wörtern */
+    }
+}
